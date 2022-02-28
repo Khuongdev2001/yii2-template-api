@@ -6,6 +6,11 @@ use Yii;
 use yii\rest\ActiveController;
 use yii\data\Pagination;
 use app\models\Room;
+use yii\filters\auth\CompositeAuth;
+use yii\filters\auth\HttpBasicAuth;
+use yii\filters\auth\HttpBearerAuth;
+use yii\filters\auth\QueryParamAuth;
+
 
 class RoomController extends ActiveController
 {
@@ -13,6 +18,7 @@ class RoomController extends ActiveController
 
     public function behaviors()
     {
+        $behaviors = parent::behaviors();
         if (in_array(Yii::$app->controller->action->id, [
             "create", "update", "delete"
         ])) {
@@ -25,7 +31,6 @@ class RoomController extends ActiveController
                 ],
             ];
         }
-        $behaviors = parent::behaviors();
         return $behaviors;
     }
     

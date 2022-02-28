@@ -13,8 +13,10 @@ use Yii;
  * @property string $student_name
  * @property string $created_at
  * @property string $updated_at
+ * @property string $ranking
  *
  * @property \app\models\StudentRoom[] $studentRooms
+ * @property \app\models\StudentSubject[] $studentSubjects
  * @property string $aliasModel
  */
 abstract class Student extends \yii\db\ActiveRecord
@@ -37,7 +39,8 @@ abstract class Student extends \yii\db\ActiveRecord
     {
         return [
             [['student_name'], 'required'],
-            [['student_name', 'created_at', 'updated_at'], 'string', 'max' => 255]
+            [['student_name', 'created_at', 'updated_at'], 'string', 'max' => 255],
+            [['ranking'], 'string', 'max' => 50]
         ];
     }
 
@@ -51,6 +54,7 @@ abstract class Student extends \yii\db\ActiveRecord
             'student_name' => 'Student Name',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
+            'ranking' => 'Ranking',
         ];
     }
 
@@ -60,6 +64,14 @@ abstract class Student extends \yii\db\ActiveRecord
     public function getStudentRooms()
     {
         return $this->hasMany(\app\models\StudentRoom::className(), ['student_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getStudentSubjects()
+    {
+        return $this->hasMany(\app\models\StudentSubject::className(), ['student_id' => 'id']);
     }
 
 

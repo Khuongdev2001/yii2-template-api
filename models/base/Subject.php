@@ -7,17 +7,17 @@ namespace app\models\base;
 use Yii;
 
 /**
- * This is the base-model class for table "rooms".
+ * This is the base-model class for table "subjects".
  *
  * @property integer $id
  * @property string $name
  * @property string $created_at
  * @property string $updated_at
  *
- * @property \app\models\StudentRoom[] $studentRooms
+ * @property \app\models\StudentSubject[] $studentSubjects
  * @property string $aliasModel
  */
-abstract class Room extends \yii\db\ActiveRecord
+abstract class Subject extends \yii\db\ActiveRecord
 {
 
 
@@ -27,7 +27,7 @@ abstract class Room extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'rooms';
+        return 'subjects';
     }
 
     /**
@@ -57,20 +57,20 @@ abstract class Room extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getStudentRooms()
+    public function getStudentSubjects()
     {
-        return $this->hasMany(\app\models\StudentRoom::className(), ['room_id' => 'id']);
+        return $this->hasMany(\app\models\StudentSubject::className(), ['subject_id' => 'id']);
     }
 
 
     
     /**
      * @inheritdoc
-     * @return \app\models\RoomQuery the active query used by this AR class.
+     * @return \app\models\SubjectQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new \app\models\RoomQuery(get_called_class());
+        return new \app\models\SubjectQuery(get_called_class());
     }
 
 

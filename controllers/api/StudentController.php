@@ -17,6 +17,7 @@ class StudentController extends ActiveController
 
     public function behaviors()
     {
+        $behaviors = parent::behaviors();
         if (in_array(Yii::$app->controller->action->id, [
             "create", "update", "delete"
         ])) {
@@ -29,7 +30,6 @@ class StudentController extends ActiveController
                 ],
             ];
         }
-        $behaviors = parent::behaviors();
         return $behaviors;
     }
 

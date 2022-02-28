@@ -4526,3 +4526,777 @@ $_SERVER = [
     ]
     'argc' => 4
 ]
+2022-02-28 07:04:15 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "start". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('start', Array)
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('start', Array)
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "start". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('start', Array)
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#3 {main}
+2022-02-28 07:04:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646028254.834
+    'REQUEST_TIME' => 1646028254
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'start'
+    ]
+    'argc' => 2
+]
+2022-02-28 08:46:03 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migreate/create". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migreate/create', Array)
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migreate/create', Array)
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migreate/create". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migreate/create', Array)
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#3 {main}
+2022-02-28 08:46:03 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646034363.1483
+    'REQUEST_TIME' => 1646034363
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'migreate/create'
+        2 => 'add_subject_id_column_to_student_subjects_table'
+    ]
+    'argc' => 3
+]
+2022-02-28 09:02:17 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "start". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('start', Array)
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('start', Array)
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "start". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('start', Array)
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#3 {main}
+2022-02-28 09:02:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646035337.2436
+    'REQUEST_TIME' => 1646035337
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'start'
+    ]
+    'argc' => 2
+]
+2022-02-28 10:27:48 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown bootstrapping component ID: queue in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php:315
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#5 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#6 {main}
+2022-02-28 10:27:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646040468.7763
+    'REQUEST_TIME' => 1646040468
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'serve'
+    ]
+    'argc' => 2
+]
+2022-02-28 10:27:51 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown bootstrapping component ID: queue in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php:315
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#5 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#6 {main}
+2022-02-28 10:27:51 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646040471.8126
+    'REQUEST_TIME' => 1646040471
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'serve'
+    ]
+    'argc' => 2
+]
+2022-02-28 10:33:15 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class "test_student" does not exist in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('test_student')
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('test_student')
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('test_student', Array, Array)
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('test_student')
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#5 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2-queue\src\drivers\db\Queue.php(61): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#6 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\queue\db\Queue->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\queue\\db\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\queue\\db\\Qu...', Array, Array)
+#11 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('queue', true)
+#13 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(311): yii\base\Module->get('queue')
+#14 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#15 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#16 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#17 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#18 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#19 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#20 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "test_student". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('test_student')
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('test_student', Array, Array)
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('test_student')
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2-queue\src\drivers\db\Queue.php(61): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#5 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\queue\db\Queue->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#8 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\queue\\db\\Qu...', Array, Array)
+#9 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\queue\\db\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('queue', true)
+#12 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(311): yii\base\Module->get('queue')
+#13 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#14 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#15 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#16 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#17 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#18 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#19 {main}
+2022-02-28 10:33:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646040795.1114
+    'REQUEST_TIME' => 1646040795
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2022-02-28 10:33:19 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class "test_student" does not exist in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('test_student')
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('test_student')
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('test_student', Array, Array)
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('test_student')
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#5 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2-queue\src\drivers\db\Queue.php(61): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#6 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\queue\db\Queue->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\queue\\db\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\queue\\db\\Qu...', Array, Array)
+#11 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('queue', true)
+#13 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(311): yii\base\Module->get('queue')
+#14 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#15 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#16 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#17 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#18 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#19 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#20 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "test_student". in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('test_student')
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('test_student', Array, Array)
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('test_student')
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2-queue\src\drivers\db\Queue.php(61): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#5 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\queue\db\Queue->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#8 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\queue\\db\\Qu...', Array, Array)
+#9 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\queue\\db\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#11 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('queue', true)
+#12 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(311): yii\base\Module->get('queue')
+#13 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#14 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#15 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#16 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#17 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#18 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#19 {main}
+2022-02-28 10:33:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646040799.2386
+    'REQUEST_TIME' => 1646040799
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2022-02-28 10:48:02 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown bootstrapping component ID: queue in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php:315
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#5 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#6 {main}
+2022-02-28 10:48:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646041682.7334
+    'REQUEST_TIME' => 1646041682
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'queue/run'
+    ]
+    'argc' => 2
+]
+2022-02-28 10:52:31 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown bootstrapping component ID: queue in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php:315
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#5 C:\xampp\htdocs\company\api-student\yii(19): yii\console\Application->__construct(Array)
+#6 {main}
+2022-02-28 10:52:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHP' => 'C:\\xampp\\php'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\company\\api-student\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646041951.0828
+    'REQUEST_TIME' => 1646041951
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\company\\api-student\\yii'
+        1 => 'queue'
+    ]
+    'argc' => 2
+]

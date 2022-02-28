@@ -6,12 +6,15 @@ $db = require(__DIR__ . '/db.php');
 $config = [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log','queue'],
     'controllerNamespace' => 'app\console\controllers',
     'controllerMap' => [
         'migrate' => [
             'class' => 'yii\console\controllers\MigrateController',
             'migrationPath' => '@app/migrations',
+            'migrationNamespaces' => [
+                'yii\queue\db\migrations',
+            ]
         ],
         'batch' => [
             'class' => 'schmunk42\giiant\commands\BatchController',
@@ -51,6 +54,13 @@ $config = [
             ],
         ],
         'db' => $db,
+        'queue' => [
+            'class' => \yii\queue\db\Queue::class,
+            'db' => $db, // DB connection component or its config 
+            'tableName' => '{{%queue}}', // Table name
+            'channel' => 'default', // Queue channel key
+            'mutex' => \yii\mutex\MysqlMutex::class, // Mutex used to sync queries
+        ],
     ],
     'params' => $params,
 ];
