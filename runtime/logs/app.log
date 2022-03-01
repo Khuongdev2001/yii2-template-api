@@ -5300,3 +5300,179 @@ $_SERVER = [
     ]
     'argc' => 2
 ]
+2022-02-28 11:56:04 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: id in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Controller.php:246
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('test-khuong', Array)
+#3 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('test-khuong', Array)
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test/test-khuon...', Array)
+#5 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/test-khuon...', Array)
+#6 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#8 {main}
+2022-02-28 11:56:04 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_1780_EWCOYXGQLPYOHHTJ'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PHP' => 'C:\\xampp\\php'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\khuongnh\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-f40ede6b69-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646045764.0309
+    'REQUEST_TIME' => 1646045764
+    'argv' => [
+        0 => 'yii'
+        1 => 'test/test-khuong'
+    ]
+    'argc' => 2
+]
+2022-02-28 11:59:17 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Student::111111 in C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('111111')
+#1 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\ArrayableTrait.php(126): yii\db\BaseActiveRecord->__get('111111')
+#2 C:\xampp\htdocs\company\api-student\console\controllers\TestController.php(12): yii\base\Model->toArray()
+#3 [internal function]: app\console\controllers\TestController->actionTestKhuong()
+#4 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction('test-khuong', Array)
+#7 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('test-khuong', Array)
+#8 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test/test-khuon...', Array)
+#9 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test/test-khuon...', Array)
+#10 C:\xampp\htdocs\company\api-student\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\company\api-student\yii(20): yii\base\Application->run()
+#12 {main}
+2022-02-28 11:59:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\khuongnh\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_1780_EWCOYXGQLPYOHHTJ'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DELL-96Q6T32'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongnh'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongnh\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\khuongnh\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python310\\Scripts\\;C:\\Python310\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files (x86)\\Bitvise SSH Client;D:\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\khuongnh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\khuongnh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PHP' => 'C:\\xampp\\php'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\khuongnh\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\khuongnh\\AppData\\Local\\Temp'
+    'USERDNSDOMAIN' => 'DTSMART.VN'
+    'USERDOMAIN' => 'DTSMART'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DTSMART'
+    'USERNAME' => 'KhuongNH'
+    'USERPROFILE' => 'C:\\Users\\khuongnh'
+    'windir' => 'C:\\Windows'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-f40ede6b69-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongnh\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646045957.1083
+    'REQUEST_TIME' => 1646045957
+    'argv' => [
+        0 => 'yii'
+        1 => 'test/test-khuong'
+    ]
+    'argc' => 2
+]

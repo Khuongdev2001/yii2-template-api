@@ -25,7 +25,7 @@ $config = [
     'controllerNamespace' => 'app\controllers',
     // set an alias to enable autoloading of classes from the 'micro' namespace
     'aliases' => [
-        '@app' => __DIR__ . '/../',
+        '@app' => __DIR__ . '/../'
     ],
     'components' => [
         'urlManager' => [

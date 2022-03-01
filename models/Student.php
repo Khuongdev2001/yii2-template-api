@@ -14,6 +14,21 @@ class Student extends BaseStudent
     const SCENARIO_UPDATE = "update";
     const SCENARIO_DELETE = "delete";
 
+    public function fields()
+    {
+        return array_merge(parent::fields(),[
+        ]);
+
+    }
+
+    public function getSubject(){
+        return $this->hasOne(\app\models\StudentSubject::class,["student_id"=>"id"]);
+    }
+
+    // public function getType()
+    // {
+    //     return $this->ranking > 8 ? "Excellentd":"Goodd";
+    // }
     public function beforeSave($insert)
     {
         if ($insert) {
@@ -46,6 +61,10 @@ class Student extends BaseStudent
         );
     }
 
+    public function getRooms()
+    {
+        return $this->hasMany(Room::class,['id' => 'room_id'])->viaTable('student_rooms',['student_id'=> 'id']);
+    }
 
     public function rules()
     {
@@ -73,4 +92,5 @@ class Student extends BaseStudent
             ]
         );
     }
+
 }
