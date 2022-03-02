@@ -22,6 +22,10 @@ class StudentSubject extends BaseStudentSubject
         );
     }
 
+    public function fields()
+    {
+        return 
+    }
     public function behaviors()
     {
         return ArrayHelper::merge(
@@ -32,6 +36,35 @@ class StudentSubject extends BaseStudentSubject
         );
     }
 
+    public function getType(){
+        $ranking="Giỏi";
+        if($this->score <=5){
+            $ranking="Trung Bình";
+        }
+        else if ($this->score <=8){
+            $ranking="Khá";
+        }
+        return $ranking;
+    }
+
+    public function fields()
+    {
+        return ArrayHelper::merge(parent::fields(),[
+            "type"=>"type",
+            "student"=>"student",
+            "subject"=>"subject"
+        ]);
+    }
+
+
+    // public function getStudent()
+    // {
+    // }
+
+    public function getKhuongAbc()
+    {
+        return....
+    }
     public function rules()
     {
         return ArrayHelper::merge(

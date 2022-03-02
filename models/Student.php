@@ -16,6 +16,7 @@ class Student extends BaseStudent
 
     public function fields()
     {
+<<<<<<< HEAD
         $fields = parent::fields();
         return ArrayHelper::merge($fields, [
           
@@ -27,6 +28,21 @@ class Student extends BaseStudent
         return ['profile'];
     }
 
+=======
+        return array_merge(parent::fields(),[
+        ]);
+
+    }
+
+    public function getSubject(){
+        return $this->hasOne(\app\models\StudentSubject::class,["student_id"=>"id"]);
+    }
+
+    // public function getType()
+    // {
+    //     return $this->ranking > 8 ? "Excellentd":"Goodd";
+    // }
+>>>>>>> 87044d38eab0af6478c108057b98ae5ce225a567
     public function beforeSave($insert)
     {
         if ($insert) {
@@ -60,6 +76,10 @@ class Student extends BaseStudent
         );
     }
 
+    public function getRooms()
+    {
+        return $this->hasMany(Room::class,['id' => 'room_id'])->viaTable('student_rooms',['student_id'=> 'id']);
+    }
 
     public function rules()
     {
@@ -87,4 +107,5 @@ class Student extends BaseStudent
             ]
         );
     }
+
 }

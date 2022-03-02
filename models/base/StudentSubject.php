@@ -40,8 +40,12 @@ abstract class StudentSubject extends \yii\db\ActiveRecord
     {
         return [
             [['student_id', 'score','subject_id'], 'required'],
+<<<<<<< HEAD
             [['student_id', 'subject_id'], 'integer'],
             [['score'],'number',"max"=>10],
+=======
+            [['score'],'number', 'max'=>10],
+>>>>>>> 87044d38eab0af6478c108057b98ae5ce225a567
             [['created_at', 'updated_at'], 'string', 'max' => 200],
             [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => \app\models\Student::className(), 'targetAttribute' => ['student_id' => 'id']],
             [['subject_id'], 'exist', 'skipOnError' => true, 'targetClass' => \app\models\Subject::className(), 'targetAttribute' => ['subject_id' => 'id']]
@@ -68,15 +72,16 @@ abstract class StudentSubject extends \yii\db\ActiveRecord
      */
     public function getStudent()
     {
-        return $this->hasOne(\app\models\Student::className(), ['id' => 'student_id']);
+        return $this->hasOne(\app\models\Student::className(), ['id' => 'student_id'])->select(["student_name","id"]);
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getSubject()
+    public function getSubjects()
     {
-        return $this->hasOne(\app\models\Subject::className(), ['id' => 'subject_id']);
+
+        return $this->hasOne($this::className(), ['id' => 'subject_id'])->select(["name","id"]);
     }
 
 

@@ -2,6 +2,7 @@
 
 namespace app\controllers\api;
 
+use app\models\base\Student;
 use Yii;
 use yii\rest\ActiveController;
 use yii\data\Pagination;
@@ -16,9 +17,14 @@ class StudentSubjectController extends ActiveController
 {
     public $modelClass = "app\models\StudentSubject";
 
+<<<<<<< HEAD
     public function actionTestQueue()
     {
         Yii::$app->queue->push(new \app\jobs\TestJob);
+=======
+    public function actionTestQueue(){
+        Yii::$app->queue->push(new \khuong\jobs\TestJob);
+>>>>>>> 87044d38eab0af6478c108057b98ae5ce225a567
     }
 
     public function actionAverage()
@@ -142,8 +148,11 @@ class StudentSubjectController extends ActiveController
         $request = Yii::$app->request;
         $params = $request->get();
         $query = StudentSubject::find();
+<<<<<<< HEAD
         return $this->responseJson(true, $query->all());
         die;
+=======
+>>>>>>> 87044d38eab0af6478c108057b98ae5ce225a567
         $countQuery = clone $query;
         $pages = new Pagination([
             "totalCount" => $countQuery->count(),
@@ -151,12 +160,17 @@ class StudentSubjectController extends ActiveController
             "pageSize" => $params["item"] ?? 1
         ]);
         $studentSubjects = $query
+<<<<<<< HEAD
             ->select(["student_name", "score", "name as subject"])
+=======
+>>>>>>> 87044d38eab0af6478c108057b98ae5ce225a567
             ->offset($pages->offset)
             ->limit($pages->limit)
-            ->asArray()
             ->all();
-        $this->responseJson(true, $studentSubjects, "");
+        $studentSubjects[0]->student->student_name="Vy";
+        $studentSubjects[0]->student->save();
+        
+        $this->responseJson(true,$studentSubjects, "");
     }
 
 
@@ -182,6 +196,18 @@ class StudentSubjectController extends ActiveController
             return $this->responseJson(true, null, "Xóa thành công học sinh");
         }
         return $this->responseJson(false, null, "Get id in table subject not found", 404);
+    }
+
+    public function actionAverage(){
+        $studentSubjects=StudentSubject::find()
+            ->select(["score"=>"AVG(`score`)","student_id","subject_id"])
+            ->groupBy("student_id")
+            ->all();
+            
+            Yii::$app->queue->push(new \app\jobs\AverageStudentJob([
+                "studentSubjects"=>$studentSubjects
+            ]));
+        return $this->responseJson(true,$studentSubjects);
     }
 
     public function actions()
