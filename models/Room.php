@@ -5,16 +5,20 @@ namespace app\models;
 use Yii;
 use \app\models\base\Room as BaseRoom;
 use yii\helpers\ArrayHelper;
+use app\behavior\ModelBehavior;
+use yii\behaviors\TimestampBehavior;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "rooms".
  */
 class Room extends BaseRoom
 {
+
     const SCENARIO_UPDATE = "update";
     const SCENARIO_DELETE = "delete";
-
     public $room;
+
 
     public function beforeSave($insert)
     {
@@ -31,7 +35,17 @@ class Room extends BaseRoom
         return ArrayHelper::merge(
             parent::behaviors(),
             [
-                # custom behaviors
+                [
+                    "class" => ModelBehavior::class,
+                    "action" => 34343
+                ],
+                [
+                    'class' => TimestampBehavior::class,
+                    'attributes' => [
+                        ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
+                        ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
+                    ],
+                ]
             ]
         );
     }

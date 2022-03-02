@@ -15,7 +15,7 @@ class m220228_044242_create_student_subjects_table extends Migration
         $this->createTable('{{%student_subjects}}', [
             'id' => $this->primaryKey(),
             'student_id'=>$this->integer()->notNull(),
-            'score'=>$this->integer(10)->notNull(),
+            'score'=>$this->double(10)->notNull(),
             'created_at'=>$this->string(200),
             'updated_at'=>$this->string(200)
         ]);

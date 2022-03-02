@@ -11,13 +11,28 @@ use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
 use app\models\StudentSubject;
 
-class StudentSubjectController extends ActiveController 
+class StudentSubjectController extends ActiveController
 
 {
-    public $modelClass="app\models\StudentSubject";
+    public $modelClass = "app\models\StudentSubject";
 
-    public function actionTestQueue(){
+    public function actionTestQueue()
+    {
         Yii::$app->queue->push(new \app\jobs\TestJob);
+    }
+
+    public function actionAverage()
+    {
+        $studentSubjects = StudentSubject::find()
+            ->groupBy("student_id")
+            ->select([
+                "student_id",
+                "subject_id",
+                "score" => "AVG(`score`)"
+            ]);
+        $studentSubjects = $studentSubjects->all();
+        Yii::$app->queue->push(new \app\jobs\AverageStudentSubjectJob($studentSubjects));
+        return $studentSubjects;
     }
 
     public function behaviors()
@@ -46,16 +61,17 @@ class StudentSubjectController extends ActiveController
      * @return object response
      * 
      */
-    public function actionCreate(){
-        $request=Yii::$app->request;
+    public function actionCreate()
+    {
+        $request = Yii::$app->request;
         if (!$request->isPost) {
             return $this->responseJson(200, null, "Method dont allow", 405);
         }
-        $modelStudentSubject=new StudentSubject();
-        $modelStudentSubject->load($request->post(),"");
+        $modelStudentSubject = new StudentSubject();
+        $modelStudentSubject->load($request->post(), "");
         if ($modelStudentSubject->validate()) {
-           $modelStudentSubject->save();
-           return $this->responseJson(true,$modelStudentSubject,"Thêm thành công");
+            $modelStudentSubject->save();
+            return $this->responseJson(true, $modelStudentSubject, "Thêm thành công");
         }
         return $this->responseJson(false, $modelStudentSubject->getErrors(), "", 500);
     }
@@ -69,23 +85,24 @@ class StudentSubjectController extends ActiveController
      * @return object response
      */
 
-    public function actionUpdate(){
-        $request=Yii::$app->request;
-        if(!$request->isPost){
+    public function actionUpdate()
+    {
+        $request = Yii::$app->request;
+        if (!$request->isPost) {
             return $this->responseJson(200, null, "Method dont allow", 405);
         }
-        $modelStudentSubject=new StudentSubject();
-        $modelStudentSubject->load($request->post(),"");
+        $modelStudentSubject = new StudentSubject();
+        $modelStudentSubject->load($request->post(), "");
         if (!$modelStudentSubject->validate()) {
             return $this->responseJson(false, $modelStudentSubject->getErrors(), "", 500);
         }
-        $studentSubject=$modelStudentSubject->findOne(["id"=>$request->get("id")]);
-        if($studentSubject){
-            $studentSubject->load($request->post(),"");
+        $studentSubject = $modelStudentSubject->findOne(["id" => $request->get("id")]);
+        if ($studentSubject) {
+            $studentSubject->load($request->post(), "");
             $studentSubject->save();
-            return $this->responseJson(true,$modelStudentSubject,"Cập Nhật thành công");
+            return $this->responseJson(true, $modelStudentSubject, "Cập Nhật thành công");
         }
-        return $this->responseJson(false,null,"Get id in table subject not found",404);
+        return $this->responseJson(false, null, "Get id in table subject not found", 404);
     }
 
     /**
@@ -96,16 +113,17 @@ class StudentSubjectController extends ActiveController
      * 
      *here is method get student_subject by id
      */
-    
-    public function actionView(){
-        $request=Yii::$app->request;
-        if(!$request->isGet){
+
+    public function actionView()
+    {
+        $request = Yii::$app->request;
+        if (!$request->isGet) {
             return $this->responseJson(200, null, "Method dont allow", 405);
         }
-        $modelStudentSubject=new StudentSubject();
-        $studentSubject=$modelStudentSubject->findOne(["id"=>$request->get("id")]);
-        return $this->responseJson(true,[
-            "studentSubject"=>$studentSubject
+        $modelStudentSubject = new StudentSubject();
+        $studentSubject = $modelStudentSubject->findOne(["id" => $request->get("id")]);
+        return $this->responseJson(true, [
+            "studentSubject" => $studentSubject
         ]);
     }
 
@@ -113,7 +131,8 @@ class StudentSubjectController extends ActiveController
      * @return object response
      */
 
-    public function actionIndex(){
+    public function actionIndex()
+    {
         /**
          * [ 
          *  item: set page size
@@ -123,8 +142,8 @@ class StudentSubjectController extends ActiveController
         $request = Yii::$app->request;
         $params = $request->get();
         $query = StudentSubject::find();
-        $query->leftJoin("students","`students`.`id`=`student_subjects`.`student_id`");
-        $query->leftJoin("subjects","`subjects`.`id`=`student_subjects`.`subject_id`");
+        return $this->responseJson(true, $query->all());
+        die;
         $countQuery = clone $query;
         $pages = new Pagination([
             "totalCount" => $countQuery->count(),
@@ -132,7 +151,7 @@ class StudentSubjectController extends ActiveController
             "pageSize" => $params["item"] ?? 1
         ]);
         $studentSubjects = $query
-            ->select(["student_name","score","name as subject"])
+            ->select(["student_name", "score", "name as subject"])
             ->offset($pages->offset)
             ->limit($pages->limit)
             ->asArray()
@@ -150,23 +169,22 @@ class StudentSubjectController extends ActiveController
      * 
      */
 
-    public function actionDelete(){
-        $request=Yii::$app->request;
-        if(!$request->isDelete){
+    public function actionDelete()
+    {
+        $request = Yii::$app->request;
+        if (!$request->isDelete) {
             return $this->responseJson(200, null, "Method dont allow", 405);
         }
         $modelStudentSubject = new StudentSubject();
-        $modelStudentSubject->findOne(["id"=>$request->get("id")]);
-        if($modelStudentSubject){
-            $modelStudentSubject->deleteAll(["id"=>$request->get("id")]);
+        $modelStudentSubject->findOne(["id" => $request->get("id")]);
+        if ($modelStudentSubject) {
+            $modelStudentSubject->deleteAll(["id" => $request->get("id")]);
             return $this->responseJson(true, null, "Xóa thành công học sinh");
         }
-        return $this->responseJson(false,null,"Get id in table subject not found",404);
+        return $this->responseJson(false, null, "Get id in table subject not found", 404);
     }
 
     public function actions()
     {
-        
     }
-
-} 
+}

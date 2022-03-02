@@ -22,15 +22,8 @@ use Yii;
  */
 abstract class StudentSubject extends \yii\db\ActiveRecord
 {
-    public function beforeSave($insert)
-    {
-        if($insert){
-            $this->created_at=time();
-            return true;
-        }
-        $this->updated_at=time();
-        return true;
-    }
+
+
 
     /**
      * @inheritdoc
@@ -47,7 +40,8 @@ abstract class StudentSubject extends \yii\db\ActiveRecord
     {
         return [
             [['student_id', 'score','subject_id'], 'required'],
-            [['student_id', 'score', 'subject_id'],'number', 'max'=>10],
+            [['student_id', 'subject_id'], 'integer'],
+            [['score'],'number',"max"=>10],
             [['created_at', 'updated_at'], 'string', 'max' => 200],
             [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => \app\models\Student::className(), 'targetAttribute' => ['student_id' => 'id']],
             [['subject_id'], 'exist', 'skipOnError' => true, 'targetClass' => \app\models\Subject::className(), 'targetAttribute' => ['subject_id' => 'id']]

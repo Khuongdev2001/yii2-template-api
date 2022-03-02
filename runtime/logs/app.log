@@ -5300,3 +5300,1113 @@ $_SERVER = [
     ]
     'argc' => 2
 ]
+2022-02-28 15:50:35 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class yii\queue\db\Queue does not exist in D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\Container.php:507
+Stack trace:
+#0 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\Container.php(507): ReflectionClass->__construct('yii\\queue\\db\\Qu...')
+#1 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('yii\\queue\\db\\Qu...')
+#2 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\queue\\db\\Qu...', Array, Array)
+#3 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\queue\\db\\Qu...', Array, Array)
+#4 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('queue', true)
+#6 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(311): yii\base\Module->get('queue')
+#7 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#8 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#9 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#10 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#11 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#12 D:\yii2\yii2-rest-api-template\yii(19): yii\console\Application->__construct(Array)
+#13 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "yii\queue\db\Queue". in D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\Container.php:509
+Stack trace:
+#0 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\Container.php(385): yii\di\Container->getDependencies('yii\\queue\\db\\Qu...')
+#1 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\queue\\db\\Qu...', Array, Array)
+#2 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\queue\\db\\Qu...', Array, Array)
+#3 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#4 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('queue', true)
+#5 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(311): yii\base\Module->get('queue')
+#6 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(271): yii\base\Application->bootstrap()
+#7 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(124): yii\base\Application->init()
+#8 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\console\Application->init()
+#9 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#10 D:\yii2\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(89): yii\base\Application->__construct(Array)
+#11 D:\yii2\yii2-rest-api-template\yii(19): yii\console\Application->__construct(Array)
+#12 {main}
+2022-02-28 15:50:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646059835.221
+    'REQUEST_TIME' => 1646059835
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'serve'
+    ]
+    'argc' => 2
+]
+2022-02-28 15:50:35 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-02-28 15:50:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646059835.221
+    'REQUEST_TIME' => 1646059835
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'serve'
+    ]
+    'argc' => 2
+]
+2022-02-28 15:53:01 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-02-28 15:52:58 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646059978.5087
+    'REQUEST_TIME' => 1646059978
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2022-02-28 15:53:36 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-02-28 15:53:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646060016.6158
+    'REQUEST_TIME' => 1646060016
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'batch/models'
+        2 => '--modelNamespace=app\\models'
+    ]
+    'argc' => 3
+]
+2022-02-28 15:53:55 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-02-28 15:53:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646060034.934
+    'REQUEST_TIME' => 1646060034
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'batch/models'
+        2 => '--modelNamespace=app\\models'
+        3 => '--modelQueryNamespace=app\\models'
+    ]
+    'argc' => 4
+]
+2022-03-01 01:47:26 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-03-01 01:47:26 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646095646.9382
+    'REQUEST_TIME' => 1646095646
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'queue/exec'
+        2 => '1'
+        3 => '300'
+        4 => '1'
+        5 => '12236'
+        6 => '--color='
+    ]
+    'argc' => 7
+]
+2022-03-01 01:47:27 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-03-01 01:47:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646095647.1482
+    'REQUEST_TIME' => 1646095647
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'queue/exec'
+        2 => '2'
+        3 => '300'
+        4 => '1'
+        5 => '12236'
+        6 => '--color='
+    ]
+    'argc' => 7
+]
+2022-03-01 01:47:27 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-03-01 01:47:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646095647.575
+    'REQUEST_TIME' => 1646095647
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'queue/exec'
+        2 => '3'
+        3 => '300'
+        4 => '1'
+        5 => '12236'
+        6 => '--color='
+    ]
+    'argc' => 7
+]
+2022-03-01 01:47:27 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-03-01 01:47:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646095647.8097
+    'REQUEST_TIME' => 1646095647
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'queue/exec'
+        2 => '4'
+        3 => '300'
+        4 => '1'
+        5 => '12236'
+        6 => '--color='
+    ]
+    'argc' => 7
+]
+2022-03-01 01:47:28 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-03-01 01:47:28 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646095648.1429
+    'REQUEST_TIME' => 1646095648
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'queue/exec'
+        2 => '5'
+        3 => '300'
+        4 => '1'
+        5 => '12236'
+        6 => '--color='
+    ]
+    'argc' => 7
+]
+2022-03-01 01:48:11 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-03-01 01:48:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646095691.4439
+    'REQUEST_TIME' => 1646095691
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'queue/exec'
+        2 => '6'
+        3 => '300'
+        4 => '1'
+        5 => '21280'
+        6 => '--color='
+    ]
+    'argc' => 7
+]
+2022-03-01 01:49:12 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'mongodb.so' (tried: C:\xampp\php\ext\mongodb.so (The specified module could not be found.), C:\xampp\php\ext\php_mongodb.so.dll (The specified module could not be found.)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2022-03-01 01:49:12 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANDROID_HOME' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk'
+    'APPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_7856_CCBRPUGSBNAYBWGO'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NODE_JS1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\khuongdev2001'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-17'
+    'LOCALAPPDATA' => 'C:\\Users\\khuongdev2001\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NODE_JS1'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\khuongdev2001\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;D:\\Program Files\\vmware\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;E:\\xamp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\NoteBook FanControl\\;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Java\\jdk-17\\bin;C:\\Users\\khuongdev2001\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\khuongdev2001\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Android\\Sdk\\platform-tools;D:\\program\\jre\\bin;C:\\Users\\khuongdev2001\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WebDriver\\bin;C:\\Program Files\\apache-maven-3.8.3\\bin;D:\\xampp\\php;C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'php' => 'C:\\xampp\\php\\php.exe'
+    'PhpStorm' => 'D:\\Program Files\\PhpStorm 2021.3.2\\bin;'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\khuongdev2001\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\KHUONG~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NODE_JS1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NODE_JS1'
+    'USERNAME' => 'khuongdev2001'
+    'USERPROFILE' => 'C:\\Users\\khuongdev2001'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\yii2\\yii2-rest-api-template\\'
+    '_JAVA_OPTIONS' => '-Xmx1028M'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.64.2'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-666fe221df-sock'
+    'GIT_ASKPASS' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\khuongdev2001\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'PHP_SELF' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_NAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'SCRIPT_FILENAME' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'PATH_TRANSLATED' => 'D:\\yii2\\yii2-rest-api-template\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1646095752.4265
+    'REQUEST_TIME' => 1646095752
+    'argv' => [
+        0 => 'D:\\yii2\\yii2-rest-api-template\\yii'
+        1 => 'queue/exec'
+        2 => '7'
+        3 => '300'
+        4 => '1'
+        5 => '560'
+        6 => '--color='
+    ]
+    'argc' => 7
+]

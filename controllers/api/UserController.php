@@ -103,7 +103,6 @@ class UserController extends Controller
         ];
 
         $user = User::findByUsername($params['username']);
-
         if ($user->validatePassword($params['password'])) {
             if(isset($params['consumer'])) $user->consumer = $params['consumer'];
             if(isset($params['access_given'])) $user->access_given = $params['access_given'];

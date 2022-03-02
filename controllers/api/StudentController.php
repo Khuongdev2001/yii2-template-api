@@ -80,17 +80,21 @@ class StudentController extends ActiveController
     public function actionUpdate()
     {
         $request = Yii::$app->request;
-        $studentModel = new Student();
+        $studentModel = new Student(["scenario" => Student::SCENARIO_UPDATE]);
         /* add option update validate */
-        $studentModel->scenario = Student::SCENARIO_UPDATE;
         $studentModel->load($request->getBodyParams(), "");
-        if ($studentModel->validate()) {
-            $studentModel->updateAll($studentModel);
-            return $this->responseJson(true, [
-                "student" => $studentModel
-            ], "Update Thành Công");
+        $student = $studentModel->findOne(["id" => $request->get("id")]);
+        if (!$studentModel->validate()) {
+            return $this->responseJson(false, $studentModel->getErrors());
         }
-        return $this->responseJson(false, $studentModel->getErrors());
+        if ($student) {
+            $student->load($request->getBodyParams(), "");
+            $student->save();
+            return $this->responseJson(true, [
+                "student" => $student
+            ], "Cập nhật thành công");
+        }
+        return $this->responseJson(false, null, "Get id in table students not found", 404);
     }
 
     public function actionDelete()

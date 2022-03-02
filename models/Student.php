@@ -14,6 +14,19 @@ class Student extends BaseStudent
     const SCENARIO_UPDATE = "update";
     const SCENARIO_DELETE = "delete";
 
+    public function fields()
+    {
+        $fields = parent::fields();
+        return ArrayHelper::merge($fields, [
+          
+        ]);
+    }
+
+    public function extraFields()
+    {
+        return ['profile'];
+    }
+
     public function beforeSave($insert)
     {
         if ($insert) {
@@ -31,10 +44,11 @@ class Student extends BaseStudent
         /* Đây là Cách Good để khai báo các scenarios */
         $scenarios = parent::scenarios();
         /* Is Field Quan Trọng Lọc Đưa Vào Validate */
-        $scenarios[self::SCENARIO_UPDATE] = ["id", "student_name"];
-        $scenarios[self::SCENARIO_DELETE] = ["id"];
+        $scenarios[self::SCENARIO_UPDATE] = ["student_name"];
+        $scenarios[self::SCENARIO_DELETE] = [];
         return $scenarios;
     }
+
 
     public function behaviors()
     {

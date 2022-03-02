@@ -3,24 +3,14 @@
 namespace app\models;
 
 use Yii;
-use \app\models\base\StudentSubject as BaseStudentSubject;
+use \app\models\base\Queue as BaseQueue;
 use yii\helpers\ArrayHelper;
 
 /**
- * This is the model class for table "student_subjects".
+ * This is the model class for table "queue".
  */
-class StudentSubject extends BaseStudentSubject
+class Queue extends BaseQueue
 {
-    public function fields()
-    {
-        return ArrayHelper::merge(
-            parent::fields(),
-            [
-                "student"=>"student",
-                "subject"=>"subject"
-            ]
-        );
-    }
 
     public function behaviors()
     {

@@ -5,16 +5,18 @@ namespace app\controllers\api;
 use Yii;
 use yii\rest\ActiveController;
 use yii\data\Pagination;
-use app\models\Room;
 use yii\filters\auth\CompositeAuth;
 use yii\filters\auth\HttpBasicAuth;
 use yii\filters\auth\HttpBearerAuth;
 use yii\filters\auth\QueryParamAuth;
+use app\models\Room;
+use app\behavior\ControllerBehavior;
 
 
 class RoomController extends ActiveController
 {
     public $modelClass = "app\models\Room";
+
 
     public function behaviors()
     {
@@ -31,9 +33,12 @@ class RoomController extends ActiveController
                 ],
             ];
         }
+        $behaviors['test'] = [
+            'class' => ControllerBehavior::class
+        ];
         return $behaviors;
     }
-    
+
 
     public function actionIndex()
     {

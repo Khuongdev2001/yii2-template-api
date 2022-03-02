@@ -12,7 +12,7 @@ use Yii;
  * @property integer $id
  * @property string $name
  * @property string $created_at
- * @property string $updated_at
+ * @property string $updated_att
  *
  * @property \app\models\StudentSubject[] $studentSubjects
  * @property string $aliasModel
@@ -37,7 +37,7 @@ abstract class Subject extends \yii\db\ActiveRecord
     {
         return [
             [['name'], 'required'],
-            [['name', 'created_at', 'updated_at'], 'string', 'max' => 255]
+            [['name', 'created_at', 'updated_att'], 'string', 'max' => 255]
         ];
     }
 
@@ -50,7 +50,7 @@ abstract class Subject extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'updated_att' => 'Updated Att',
         ];
     }
 
